@@ -5,7 +5,7 @@ from .models import Todo
 from .serializers import TodoSerializer
 
 class TodoListApiView(APIView):
-  """ Add permission to check if user us authentication"""
+  """ Add permission to check if user is authenticated"""
   permission_classes = [permissions.IsAuthenticated]
 
   # 1. List all
