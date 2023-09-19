@@ -17,7 +17,7 @@ class TodoListApiView(APIView):
   
 
   # 2 Create
-  def post(self, request,**args, **kwargs):
+  def post(self, request,*args, **kwargs):
     """ Create the todo with given todo data"""
     
     data = {
