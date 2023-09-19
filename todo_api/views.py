@@ -9,7 +9,7 @@ class TodoListApiView(APIView):
   permission_classes = [permissions.IsAuthenticated]
 
   # 1. List all
-  def get (self , request, **args, **kwargs ):
+  def get (self , request, *args, **kwargs ):
     """ List of all the todo items for given requested user"""
     todos = Todo.objects.filter(user = request.user.id )
     serializer = TodoSerializer(todos,many=True)
