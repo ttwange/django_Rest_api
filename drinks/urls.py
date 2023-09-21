@@ -4,4 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.drink_list),
+    path('/<int:id>', views.drink_list),
 ]
