@@ -7,3 +7,6 @@ def drink_list(request):
   #fet all the drinks 
   #serialize them
   #return json
+  drinks = Drink.objects.all()
+  serializer = DrinkSerializer(drinks, many=True)
+  return JsonResponse(serializer.data)
