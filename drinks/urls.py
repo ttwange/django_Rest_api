@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import drink_list
+from .views import drink_list,drink_detail
 from . import views
 
 urlpatterns = [
-    path('', views.drink_list),
-    path('/<int:id>', views.drink_list),
+    path('api/', views.drink_list),
+    path('api/<int:id>', views.drink_detail),
 ]
