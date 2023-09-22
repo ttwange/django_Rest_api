@@ -21,8 +21,8 @@ def drink_list(request):
       return Response(serializer.data, status=status.HTTP_201_CREATED)
     
 
-@api_view(['GET','POST','DELETE'])
-def drink_detail (request , pk):
+@api_view(['GET','PUT','DELETE'])
+def drink_detail(request,id):
   try:
     drink = Drink.objects.get(pk=id)
   except Drink.DoesNotExist:

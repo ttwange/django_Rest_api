@@ -1,6 +1,5 @@
 from django.urls import path
-from .views import drink_list,drink_detail
-from . import views
+from drinks import views
 
 urlpatterns = [
     path('api/', views.drink_list),
