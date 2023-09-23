@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import HelloView
+from .views import Random
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
-    path('hello/',HelloView.as_view(),name='hello'),
+    path('hello/',Random.as_view(),name='hello'),
 ]

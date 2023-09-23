@@ -10,5 +10,5 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('todos/', include(todo_urls)),
     path('drinks/',include(drink_urls)),
-    path('RandomApi/', include())
+    path('RandomApi/', include(Ran_urls))
 ]
