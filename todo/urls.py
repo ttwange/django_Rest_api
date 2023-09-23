@@ -8,5 +8,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('todos/', include(todo_urls)),
-    path('drinks/',include(drink_urls))
+    path('drinks/',include(drink_urls)),
+    #path('RandomApi/', include())
 ]
